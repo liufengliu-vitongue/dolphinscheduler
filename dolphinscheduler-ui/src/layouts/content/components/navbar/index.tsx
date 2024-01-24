@@ -90,7 +90,7 @@ const Navbar = defineComponent({
                   <SettingOutlined />
                 </NIcon>
               ),
-              default: this.t('menu.ui_setting')
+              default: () => this.t('menu.ui_setting')
             }}
           </NButton>
           <Theme />

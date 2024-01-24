@@ -41,8 +41,21 @@ export default defineConfig({
       // resolve vue-i18n warning: You are running the esm-bundler build of vue-i18n.
     }
   },
+  define: {
+    __VUE_I18N_FULL_INSTALL__: JSON.stringify(true),
+    __VUE_I18N_LEGACY_API__: JSON.stringify(true),
+    __INTLIFY_PROD_DEVTOOLS__: JSON.stringify(true)
+  },
   server: {
     proxy: {
+      '/dolphinscheduler/oauth2-provider': {
+        target: 'http://localhost:3000',
+        changeOrigin: true
+      },
+      '/dolphinscheduler/login/sso': {
+        target: 'http://localhost:3000',
+        changeOrigin: true
+      },
       '/dolphinscheduler': {
         target: loadEnv('development', './').VITE_APP_DEV_WEB_URL,
         changeOrigin: true

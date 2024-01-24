@@ -1,3 +1,4 @@
+import { type GlobalThemeOverrides } from 'naive-ui'
 /*
  * Licensed to the Apache Software Foundation (ASF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
@@ -15,16 +16,22 @@
  * limitations under the License.
  */
 
-const dark = {
+const dark: GlobalThemeOverrides = {
   common: {
-    bodyColor: '#141414',
+    bodyColor: '#6b427b',
     baseColor: '#f8f8fc',
+    borderRadius: '16px',
+    heightTiny: '28px',
+    heightSmall: '36px',
+    heightMedium: '48px',
+    heightLarge: '56px',
+    heightHuge: '64px',
 
     /**************** Brand color */
-    primaryColor: '#177ddc',
-    primaryColorHover: '#1765ad',
+    primaryColor: '#f986d1',
+    primaryColorHover: '#775284',
     primaryColorPressed: '#3c9ae8',
-    primaryColorSuppl: '#177ddc',
+    primaryColorSuppl: '#3a9ae8',
 
     /**************** Function of color */
     infoColor: '#177ddc',
