@@ -24,6 +24,7 @@ const light: GlobalThemeOverrides = {
     heightMedium: '48px',
     heightLarge: '56px',
     heightHuge: '64px',
+    cardColor: 'rgba(215,200,227,0.7)',
 
     /**************** Brand color */
     primaryColor: '#471c56',
