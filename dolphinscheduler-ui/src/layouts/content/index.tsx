@@ -25,6 +25,8 @@ import { useRouteStore } from '@/store/route/route'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 
+import $style from './index.module.css'
+
 const Content = defineComponent({
   name: 'DSContent',
   setup() {
@@ -121,6 +123,7 @@ const Content = defineComponent({
           )}
           <NLayoutContent
             native-scrollbar={false}
+            class={$style['main-layout']}
             style='padding: 16px 22px'
             contentStyle={'height: 100%'}
           >

@@ -1,0 +1,12 @@
+:root {
+  --ui-primary-color: 72, 30, 89;
+}
+
+.main-layout:global(.n-layout),
+.main-layout:global(.n-layout-content) {
+  background-color: rgb(var(--ui-primary-color));
+  background-image: url('../../assets/images/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

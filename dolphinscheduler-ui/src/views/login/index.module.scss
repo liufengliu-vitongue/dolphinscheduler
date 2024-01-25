@@ -21,7 +21,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #0098e1;
+  background: rgb(72, 30, 89) url('../../assets/images/bg.png') no-repeat center center/cover;
 
   .language-switch {
     position: absolute;
@@ -32,8 +32,8 @@
   .login-model {
     width: 400px;
     min-height: 260px;
-    background: #fff;
-    border-radius: 3px;
+    background: rgba(187, 111, 210, 0.42);
+    border-radius: 30px;
     box-shadow: 0 2px 25px 0 rgb(0 0 0 / 30%);
 
     .logo {
@@ -45,7 +45,7 @@
       .logo-img {
         width: 280px;
         height: 60px;
-        background: url('../../assets/images/logo-light.svg') 50% no-repeat;
+        background: url('../../assets/images/dolphinscheduler.png') no-repeat center center/contain;
         margin: 0 auto;
       }
     }

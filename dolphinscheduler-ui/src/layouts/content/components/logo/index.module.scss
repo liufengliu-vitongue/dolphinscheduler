@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-.logo {
+ .logo {
   width: 180px;
   height: 100%;
   margin-left: 12px;
 }
 
 .logo-dark {
-  background: url('../../../../assets/images/logo-dark.svg') 100% no-repeat;
+  background: url('../../../../assets/images/dolphinscheduler_dark.png') no-repeat center center / contain;
 }
 
 .logo-light {
-  background: url('../../../../assets/images/logo-light.svg') 100% no-repeat;
+  background: url('../../../../assets/images/dolphinscheduler_light.png') no-repeat center center / contain;
 }

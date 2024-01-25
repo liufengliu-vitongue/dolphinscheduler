@@ -84,7 +84,7 @@ const login = defineComponent({
             <NForm rules={this.rules} ref='loginFormRef'>
               <NFormItem
                 label={this.t('login.userName')}
-                label-style={{ color: 'black' }}
+                label-style={{ color: 'white' }}
                 path='userName'
               >
                 <NInput
@@ -100,7 +100,7 @@ const login = defineComponent({
               </NFormItem>
               <NFormItem
                 label={this.t('login.userPassword')}
-                label-style={{ color: 'black' }}
+                label-style={{ color: 'white' }}
                 path='userPassword'
               >
                 <NInput
@@ -117,7 +117,7 @@ const login = defineComponent({
             <NButton
               class='btn-login'
               round
-              type='info'
+              type='primary'
               disabled={
                 !this.loginForm.userName || !this.loginForm.userPassword
               }
