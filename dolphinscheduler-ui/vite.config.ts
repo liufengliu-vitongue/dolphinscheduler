@@ -24,7 +24,7 @@ import path from 'path'
 export default defineConfig({
   base:
     process.env.NODE_ENV === 'production'
-      ? process.env.PUBLIC_PATH || '/dolphinscheduler/ui/'
+      ? process.env.VITE_APP_BASE_PATH || '/dolphinscheduler/ui/'
       : '/',
   plugins: [
     vue(),
